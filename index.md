@@ -1,37 +1,406 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  Archives - 石强博客
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="石强博客" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
 
-You can use the [editor on GitHub](https://github.com/wo-wo/blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<div id="header">
+    <h1><a href="index.html">石强博客</a></h1>
+</div>
 
-```markdown
-Syntax highlighted code block
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 石强博客</span>
+  </a>
+</nav>
 
-# Header 1
-## Header 2
-### Header 3
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>git</label></li>
 
-- Bulleted
-- List
+          
 
-1. Numbered
-2. List
+      
+      </ul>
+    </aside>
 
-**Bold** and _Italic_ and `Code` text
+<a class="exit-off-canvas" href="#"></a>
 
-[Link](url) and ![Image](src)
-```
+        <section id="main-content" role="main" class="scroll-container">
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
 
-### Jekyll Themes
+                    
+                      <li class="side-title"><span>git</span></li>
+                        
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wo-wo/blog/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
 
-### Support or Contact
+ <div class="markdown-body">
+	
+		 
+		  	<h2>2022</h2>
+		
+		
+			<div>
+				<h3><a href="16429309722289.html">【2.Git 多用户配置】</a></h3>
+				<p>
+					<time datetime="2022-01-23T17:42:52+08:00" pubdate><span class='month'>1月</span> <span class='day'>23</span> <span class='year'>2022</span></time>
+					&nbsp;&nbsp;
+				  <span class="categories">posted in 
+				  
+					    <a class='category' href='git-1.html'>git</a>&nbsp;
+				   
+				  </span>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+				</p>
+			</div>
+ 	
+		
+		
+			<div>
+				<h3><a href="16429245544950.html">【Github pages】</a></h3>
+				<p>
+					<time datetime="2022-01-23T15:55:54+08:00" pubdate><span class='month'>1月</span> <span class='day'>23</span> <span class='year'>2022</span></time>
+					&nbsp;&nbsp;
+				  <span class="categories">posted in 
+				  
+					    <a class='category' href='github.html'>github</a>&nbsp;
+				   
+				  </span>
+
+				</p>
+			</div>
+ 	
+		
+		
+			<div>
+				<h3><a href="16429243514096.html">【新建仓库 Github】</a></h3>
+				<p>
+					<time datetime="2022-01-23T15:52:31+08:00" pubdate><span class='month'>1月</span> <span class='day'>23</span> <span class='year'>2022</span></time>
+					&nbsp;&nbsp;
+				  <span class="categories">posted in 
+				  
+					    <a class='category' href='github.html'>github</a>&nbsp;
+				   
+				  </span>
+
+				</p>
+			</div>
+ 	
+		
+		
+			<div>
+				<h3><a href="16414564877160.html">【ssh连接服务器】</a></h3>
+				<p>
+					<time datetime="2022-01-06T16:08:07+08:00" pubdate><span class='month'>1月</span> <span class='day'>06</span> <span class='year'>2022</span></time>
+					&nbsp;&nbsp;
+				  <span class="categories">posted in 
+				  
+					    <a class='category' href='git-1.html'>git</a>&nbsp;
+				   
+				  </span>
+
+				</p>
+			</div>
+ 	
+		 
+		  	<h2>2021</h2>
+		
+		
+			<div>
+				<h3><a href="16153950580325.html">【1.常用命令】</a></h3>
+				<p>
+					<time datetime="2021-03-11T00:50:58+08:00" pubdate><span class='month'>3月</span> <span class='day'>11</span> <span class='year'>2021</span></time>
+					&nbsp;&nbsp;
+				  <span class="categories">posted in 
+				  
+					    <a class='category' href='git-1.html'>git</a>&nbsp;
+				   
+				  </span>
+
+				</p>
+			</div>
+ 	 
+</div>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+figure{margin: 0.4em 0;padding: 0;}
+  figcaption{text-align:center;}
+
+/* PrismJS 1.14.0
+ http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background:#b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #F7F7F7;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function,
+.token.class-name {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+</style>
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+
+
+  </body>
+</html>
