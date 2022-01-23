@@ -4,14 +4,13 @@
   <title><![CDATA[石强博客]]></title>
   <link href="https://wo-wo.github.io/blog/atom.xml" rel="self"/>
   <link href="https://wo-wo.github.io/blog/"/>
-  <updated>2022-01-24T01:03:33+08:00</updated>
+  <updated>2022-01-24T01:20:12+08:00</updated>
   <id>https://wo-wo.github.io/blog/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
-  <generator uri="http://www.mweb.im">MWeb</generator>
-
+  <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
     <title type="html"><![CDATA[【Github pages】]]></title>
@@ -40,7 +39,12 @@
 <li>2.<code>Settings</code>：进入仓库设置，往下滚动 <code>GitHub Pages</code>，点击 <code>Check it out here</code></li>
 <li>3.<code>Pages</code>：进入 github pages 设置</li>
 <li>4.<code>Choose a theme</code>：选择网站的主题</li>
-<li>5.<code>Commit changes</code>：提交主题（分支：gh-pages）</li>
+<li>5.<code>Commit changes</code>：提交主题</li>
+</ul>
+<p>3.分支</p>
+<ul>
+<li><code>默认分支</code>：github pages，默认分支：gh-pages</li>
+<li><code>修改为master</code>：<code>Pages</code> -&gt; <code>Source</code> -&gt; <code>Branch</code> -&gt; <code>master</code></li>
 </ul>
 <p>3.查看域名</p>
 <ul>
