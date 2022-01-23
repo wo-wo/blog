@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[石强博客]]></title>
+  <link href="https://wo-wo.github.io/blog/atom.xml" rel="self"/>
+  <link href="https://wo-wo.github.io/blog/"/>
+  <updated>2022-01-24T01:03:33+08:00</updated>
+  <id>https://wo-wo.github.io/blog/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://www.mweb.im">MWeb</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[【Github pages】]]></title>
+    <link href="https://wo-wo.github.io/blog/16429245544950.html"/>
+    <updated>2022-01-23T15:55:54+08:00</updated>
+    <id>https://wo-wo.github.io/blog/16429245544950.html</id>
+    <content type="html"><![CDATA[
+<h1><a id="1%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.功能</h1>
+<blockquote>
+<p>提供静态网页访问功能</p>
+</blockquote>
+<p>1.特点</p>
+<ul>
+<li>服务器：使用 github 本身，免费</li>
+<li>域名：通过仓库名生成可访问 github 二级域名</li>
+</ul>
+<h1><a id="2%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.操作步骤</h1>
+<p>1.新建 github 仓库</p>
+<blockquote>
+<p>参考：新建仓库 Github<br />
+注：一定是 public</p>
+</blockquote>
+<p>2.开启 github page</p>
+<ul>
+<li>1.进入对应仓库</li>
+<li>2.<code>Settings</code>：进入仓库设置，往下滚动 <code>GitHub Pages</code>，点击 <code>Check it out here</code></li>
+<li>3.<code>Pages</code>：进入 github pages 设置</li>
+<li>4.<code>Choose a theme</code>：选择网站的主题</li>
+<li>5.<code>Commit changes</code>：提交主题（分支：gh-pages）</li>
+</ul>
+<p>3.查看域名</p>
+<ul>
+<li>1.<code>Settings</code>：进入仓库设置</li>
+<li>2.<code>Pages</code>：进入 github pages 设置</li>
+<li>3.<code>Your site is ready to be published at xxx</code>：即为可访问的域名</li>
+</ul>
+<p>4.web访问</p>
+<ul>
+<li>1.浏览器访问第三步获取的域名，查看效果</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【新建仓库 Github】]]></title>
+    <link href="https://wo-wo.github.io/blog/16429243514096.html"/>
+    <updated>2022-01-23T15:52:31+08:00</updated>
+    <id>https://wo-wo.github.io/blog/16429243514096.html</id>
+    <content type="html"><![CDATA[
+<h1><a id="1-github%E4%B8%8A%E6%96%B0%E5%A2%9E%E4%BB%93%E5%BA%93" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.Github 上新增仓库</h1>
+<p>1.步骤</p>
+<ul>
+<li>1.右上角的 <code>+</code>，然后再点 <code>New repository</code></li>
+<li>2.<code>Repository name</code> ：新建项目名称；</li>
+<li>3.<code>Description</code> ：项目的简单介绍，以方便别人浏览</li>
+<li>4.权限：<code>Public</code>  全公开；<code>Private</code>： 私密，可以手动赋予其它角色权限</li>
+<li>5.<code>Create repository</code> ：创建仓库</li>
+</ul>
+<h1><a id="2%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%90%8C%E6%AD%A5%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.本地项目同步到远程仓库</h1>
+<pre><code class="language-Go">// 1.本地项目初始化
+git init 
+
+// 2.提交
+git add .
+git commit -m &quot;xxx&quot;
+
+// 3.关联远程仓库
+git remote add origin git@github.com:holla-world/go-demo-script.git
+// 推送本地代码到远程 master 分支
+// 注：github现在默认分支是 main，不再是 master
+git push -u origin master
+</code></pre>
+<p>如果本地分支与远程不一致 TODO</p>
+<pre><code class="language-plain_text">git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+</code></pre>
+<h1><a id="3%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%88%86%E6%94%AF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.设置默认分支</h1>
+<blockquote>
+<p><code>github</code> 新版本上线之后，原默认分支为 <code>master</code>,现在统一改为了 <code>main</code></p>
+</blockquote>
+<p>1.步骤</p>
+<ul>
+<li>1.进入对应仓库，点击<code>Settings</code></li>
+<li>2.<code>Branches</code>：分支管理</li>
+<li>3.<code>Default branch</code>：设置默认分支</li>
+</ul>
+<h1><a id="4%E7%A7%81%E5%BA%93%E8%B5%8B%E4%BA%88%E5%85%B6%E5%AE%83%E4%BA%BA%E6%9D%83%E9%99%90" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.私库赋予其它人权限</h1>
+<p>1.步骤</p>
+<ul>
+<li>1.进入对应仓库，点击<code>Settings</code></li>
+<li>2.<code>Collaborators &amp; teams</code>：进入允许访问界面</li>
+<li>3.<code>create team</code>：创建团队；<code>Add people</code>：赋予个人 ；<code>Add teams</code>：赋予团队</li>
+<li>4.赋予对应权限：读、写、维护、超管权限</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【2.Git 多用户配置】]]></title>
+    <link href="https://wo-wo.github.io/blog/16429309722289.html"/>
+    <updated>2022-01-23T17:42:52+08:00</updated>
+    <id>https://wo-wo.github.io/blog/16429309722289.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#1%E9%87%8D%E7%82%B9">1.重点</a>
+<ul>
+<li><a href="#1-config%E9%85%8D%E7%BD%AE">1.config配置</a></li>
+<li><a href="#2%E6%9C%AC%E5%9C%B0%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">2.本地使用注意事项</a></li>
+</ul>
+</li>
+<li><a href="#2%E9%85%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4">2.配置步骤</a>
+<ul>
+<li><a href="#1%E6%B8%85%E9%99%A4%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE">1.清除全局配置</a></li>
+<li><a href="#2%E7%94%9F%E6%88%90%E9%92%A5%E5%AF%B9">2.生成钥对</a></li>
+<li><a href="#3%E5%B0%86%E5%85%AC%E9%92%A5%E6%B7%BB%E5%8A%A0%E5%88%B0-ssh-keys%E4%B8%AD">3.将公钥添加到 SSH Keys 中</a></li>
+<li><a href="#4%E6%B7%BB%E5%8A%A0%E7%A7%81%E9%92%A5%E5%88%B0%E6%9C%AC%E5%9C%B0">4.添加私钥到本地</a></li>
+<li><a href="#5%E7%AE%A1%E7%90%86%E5%AF%86%E9%92%A5">5.管理密钥</a></li>
+<li><a href="#6%E9%AA%8C%E8%AF%81">6.验证</a></li>
+<li><a href="#7%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE">7.仓库配置</a></li>
+</ul>
+</li>
+<li><a href="#%E9%99%84">附</a></li>
+</ul>
+<h1><a id="1%E9%87%8D%E7%82%B9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.重点</h1>
+<blockquote>
+<p>git管理多个github账户的关键在于 <code>config配置</code>和<code>本地使用方式</code></p>
+</blockquote>
+<h2><a id="1-config%E9%85%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.config配置</h2>
+<p>1.字段说明</p>
+<ul>
+<li><code>Host</code>：远程主机在本机的别名</li>
+<li><code>HostName</code>：远程主机真实名称（域名）</li>
+<li><code>User</code>：网站上的用户名</li>
+<li><code>IdentityFile</code>：私钥文件</li>
+<li><code>Port</code>：端口</li>
+</ul>
+<p>2.用户名获取方式</p>
+<ul>
+<li><code>github</code>：右上角头像 -&gt; <code>Signed in as xxx</code></li>
+<li><code>gitlib</code>：Profile Settings -&gt; Account</li>
+<li><code>gitee</code>：设置 -&gt; 个人资料 -&gt; 个人空间地址</li>
+</ul>
+<p>3.例：github 上分别有个人、工作账号</p>
+<pre><code class="language-plain_text"># 个人账号
+Host github.com
+  HostName github.com
+  User wo-wo
+  IdentityFile ~/.ssh/id_rsa_sina
+
+# 工作账号
+Host holla.github.com
+  HostName github.com
+  User holla-shiqiang
+  IdentityFile ~/.ssh/id_rsa_holla
+</code></pre>
+<h2><a id="2%E6%9C%AC%E5%9C%B0%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.本地使用注意事项</h2>
+<p><strong>clone 的地址，一定是 Host 配置映射到本机的地址</strong></p>
+<pre><code class="language-plain_text"># 个人仓库 clone 到本机地址不变
+git clone git@github.com:wo-wo/test.git
+
+# 工作仓库 clone 到本机，需要将 git@github.com 变更为 git@holla.github.com
+</code></pre>
+<h1><a id="2%E9%85%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.配置步骤</h1>
+<h2><a id="1%E6%B8%85%E9%99%A4%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.清除全局配置</h2>
+<blockquote>
+<p>建议清除全局配置，在每个项目下单独配置用户名、邮箱；</p>
+</blockquote>
+<pre><code class="language-plain_text"># 1.查看全局配置
+git config --global user.name
+git config --global user.email
+
+# 2.清除全局配置
+git config --global --unset user.name
+git config --global --unset user.email
+</code></pre>
+<h2><a id="2%E7%94%9F%E6%88%90%E9%92%A5%E5%AF%B9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.生成钥对</h2>
+<pre><code class="language-plain_text"># 1.进入 ssh 目录
+cd ~/.ssh
+
+# 2.添加个人邮箱：data_shizq@sina.com
+ssh-keygen -t rsa -C &quot;data_shizq@sina.com&quot;
+# 为了区分，文件名：id_rsa_sina
+# 密码：不设置，直接回车
+
+# 3.添加工作邮箱：qiang.shi@holla.world
+ssh-keygen -t rsa -C &quot;qiang.shi@holla.world&quot;
+# 为了区分，文件名：id_rsa_holla
+# 密码：不设置，直接回车
+</code></pre>
+<h2><a id="3%E5%B0%86%E5%85%AC%E9%92%A5%E6%B7%BB%E5%8A%A0%E5%88%B0-ssh-keys%E4%B8%AD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.将公钥添加到 SSH Keys 中</h2>
+<blockquote>
+<p>复制 *.pub 公钥，添加对应仓库的 SSH Keys</p>
+</blockquote>
+<h2><a id="4%E6%B7%BB%E5%8A%A0%E7%A7%81%E9%92%A5%E5%88%B0%E6%9C%AC%E5%9C%B0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.添加私钥到本地</h2>
+<blockquote>
+<p>否则无法使用</p>
+</blockquote>
+<pre><code class="language-plain_text">ssh-add ~/.ssh/id_rsa_sina
+ssh-add ~/.ssh/id_rsa_holla
+
+# 验证
+ssh-add -l
+</code></pre>
+<h2><a id="5%E7%AE%A1%E7%90%86%E5%AF%86%E9%92%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.管理密钥</h2>
+<pre><code class="language-plain_text">vi ~/.ssh/config
+
+**********
+# 个人账号
+Host github.com
+  HostName github.com
+  User wo-wo
+  IdentityFile ~/.ssh/id_rsa_sina
+
+# 工作账号-holla
+Host holla.github.com
+  HostName github.com
+  User holla-shiqiang
+  IdentityFile ~/.ssh/id_rsa_holla
+
+# 工作账号-julive(gitlib)
+Host git.comjia.com
+  HostName git.comjia.com
+  User shiqiang
+  IdentityFile ~/.ssh/id_rsa_comjia
+
+# 个人账号-gitee
+Host gitee.com
+  HostName gitee.com
+  User shizq
+  IdentityFile ~/.ssh/id_rsa_sina
+  Port 22
+**********
+</code></pre>
+<h2><a id="6%E9%AA%8C%E8%AF%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6.验证</h2>
+<pre><code class="language-plain_text"># 1.验证 Github 个人账号
+ssh -T git@github.com
+# 通过
+# Hi wo-wo! You've successfully authenticated, but GitHub does not provide shell access.
+
+# 2.验证 Github 工作账号
+ssh -T git@holla.github.com
+# 通过
+# Hi holla-shiqiang! You've successfully authenticated, but GitHub does not provide shell access.
+
+# 如果出现以下提示信息
+# Are you sure you want to continue connecting (yes/no/[fingerprint])?
+# yes：表示在 known_hosts中添加 ssh 授权认证信息
+</code></pre>
+<h2><a id="7%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.仓库配置</h2>
+<blockquote>
+<p>给当前仓库设置用户名，不设置，默认使用系统主机名</p>
+</blockquote>
+<pre><code class="language-plain_text">git clone git@github.com:wo-wo/test.git
+
+git config --local user.name &quot;wo-wo&quot;
+git config --local user.email &quot;data_shizq@sina.com&quot;
+
+# 查看当前仓库
+git config --local -l
+</code></pre>
+<h1><a id="%E9%99%84" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>附</h1>
+<p><a href="https://www.linuxprobe.com/linux-ssh-login.html">SSH实现免密登陆</a><br />
+<a href="https://www.cnblogs.com/benjia/p/7516389.html">git管理多个github账号</a><br />
+<a href="https://blog.csdn.net/yuanlaijike/article/details/95650625">Git 多用户配置</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【ssh连接服务器】]]></title>
+    <link href="https://wo-wo.github.io/blog/16414564877160.html"/>
+    <updated>2022-01-06T16:08:07+08:00</updated>
+    <id>https://wo-wo.github.io/blog/16414564877160.html</id>
+    <content type="html"><![CDATA[
+<h3><a id="1%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.连接服务器</h3>
+<p>1.用户名连接</p>
+<pre><code class="language-plain_text">
+</code></pre>
+<p>2.私钥连接</p>
+<blockquote>
+<p>公钥已经被添加在服务器</p>
+</blockquote>
+<pre><code class="language-plain_text"># 1.自动识别私钥
+ssh ec2-user@18.181.70.198
+
+# 2.需要携带私钥
+# -i：携带私钥，~/.ssh/eb-rtc-api-sandbox.pem 为私钥文件
+ssh -i ~/.ssh/eb-rtc-api-sandbox.pem ec2-user@13.112.233.99
+
+# 错误1：文件 ~/.ssh/eb-rtc-api-sandbox.pem 没有权限
+# chmod 777 ~/.ssh/eb-rtc-api-sandbox.pem
+# 报错2：私钥设置 777 权限后，仍然报错
+# ssh Permissions 0777 for ‘***’ are too open
+# 解决方案：将文件全选改成 600 就行了
+# 不知道 ssh 读取私钥 777 反而没有权限
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【1.常用命令】]]></title>
+    <link href="https://wo-wo.github.io/blog/16153950580325.html"/>
+    <updated>2021-03-11T00:50:58+08:00</updated>
+    <id>https://wo-wo.github.io/blog/16153950580325.html</id>
+    <content type="html"><![CDATA[
+<h3><a id="1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.配置文件</h3>
+<blockquote>
+<p>配置文件地址 ~/.gitconfig</p>
+</blockquote>
+<pre><code class="language-plain_text"># 1.查看所有配置
+# git config [–local|–global|–system] -l
+# -l:-list简写
+git config --global -l
+
+# 2.编辑配置
+# git config [–local|–global|–system] -e
+git config –global -e
+
+# 3.删除配置
+# 方法1：直接编辑文件：~/.gitconfig
+# 方法2：--unset
+git config --global --unset user.name
+</code></pre>
+
+]]></content>
+  </entry>
+  
+</feed>
