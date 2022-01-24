@@ -38,9 +38,11 @@
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
         
-        <li id=""><a target="self" href="index.html">Home</a></li>
+        <li id=""><a target="_self" href="index.html">Home</a></li>
         
         <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id=""><a target="_self" href="git.html">Git</a></li>
         
         </ul>
 
@@ -67,9 +69,11 @@
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
         
-        <li><a target="self" href="index.html">Home</a></li>
+        <li><a target="_self" href="index.html">Home</a></li>
         
         <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="git.html">Git</a></li>
         
 
     <li><label>Categories</label></li>
@@ -98,51 +102,32 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="16429245544950.html">
+                <a class="clearlink" href="16153950580325.html">
                 
-                  <h1>【Github pages】</h1>
+                  <h1>【1.常用命令】</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<h1><a id="1%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.功能</h1>
+                        	<p>这是 Git 常用命令说明</p>
+<h3><a id="1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.配置文件</h3>
 <blockquote>
-<p>提供静态网页访问功能</p>
+<p>配置文件地址 ~/.gitconfig</p>
 </blockquote>
-<p>1.特点</p>
-<ul>
-<li>服务器：使用 github 本身，免费</li>
-<li>域名：通过仓库名生成可访问 github 二级域名</li>
-</ul>
-<h1><a id="2%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.操作步骤</h1>
-<p>1.新建 github 仓库</p>
-<blockquote>
-<p>参考：新建仓库 Github<br />
-注：一定是 public</p>
-</blockquote>
-<p>2.开启 github page</p>
-<ul>
-<li>1.进入对应仓库</li>
-<li>2.<code>Settings</code>：进入仓库设置，往下滚动 <code>GitHub Pages</code>，点击 <code>Check it out here</code></li>
-<li>3.<code>Pages</code>：进入 github pages 设置</li>
-<li>4.<code>Choose a theme</code>：选择网站的主题</li>
-<li>5.<code>Commit changes</code>：提交主题</li>
-</ul>
-<p>3.分支</p>
-<ul>
-<li><code>默认分支</code>：github pages，默认分支：gh-pages</li>
-<li><code>修改为master</code>：<code>Pages</code> -&gt; <code>Source</code> -&gt; <code>Branch</code> -&gt; <code>master</code></li>
-</ul>
-<p>3.查看域名</p>
-<ul>
-<li>1.<code>Settings</code>：进入仓库设置</li>
-<li>2.<code>Pages</code>：进入 github pages 设置</li>
-<li>3.<code>Your site is ready to be published at xxx</code>：即为可访问的域名</li>
-</ul>
-<p>4.web访问</p>
-<ul>
-<li>1.浏览器访问第三步获取的域名，查看效果</li>
-</ul>
+<pre><code class="language-plain_text"># 1.查看所有配置
+# git config [–local|–global|–system] -l
+# -l:-list简写
+git config --global -l
+
+# 2.编辑配置
+# git config [–local|–global|–system] -e
+git config –global -e
+
+# 3.删除配置
+# 方法1：直接编辑文件：~/.gitconfig
+# 方法2：--unset
+git config --global --unset user.name
+</code></pre>
 
                         
                       </div>
@@ -151,10 +136,67 @@
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">01/23/2022 15:55 下午</span>
+                    <span class="date">03/11/2021 00:50 上午</span>
                     <span>posted in&nbsp;</span> 
           				  
-          					    <span class="posted-in"><a href='github.html'>github</a></span>
+          					    <span class="posted-in"><a href='git-1.html'>git</a></span>
+          				   
+                    
+
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="16414564877160.html">
+                
+                  <h1>ssh连接服务器</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>这是 ssh 连接服务器实例</p>
+<h3><a id="1%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.连接服务器</h3>
+<p>1.用户名连接</p>
+<pre><code class="language-plain_text">
+</code></pre>
+<p>2.私钥连接</p>
+<blockquote>
+<p>公钥已经被添加在服务器</p>
+</blockquote>
+<pre><code class="language-plain_text"># 1.自动识别私钥
+ssh ec2-user@18.181.70.198
+
+# 2.需要携带私钥
+# -i：携带私钥，~/.ssh/eb-rtc-api-sandbox.pem 为私钥文件
+ssh -i ~/.ssh/eb-rtc-api-sandbox.pem ec2-user@13.112.233.99
+
+# 错误1：文件 ~/.ssh/eb-rtc-api-sandbox.pem 没有权限
+# chmod 777 ~/.ssh/eb-rtc-api-sandbox.pem
+# 报错2：私钥设置 777 权限后，仍然报错
+# ssh Permissions 0777 for ‘***’ are too open
+# 解决方案：将文件全选改成 600 就行了
+# 不知道 ssh 读取私钥 777 反而没有权限
+</code></pre>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">01/06/2022 16:08 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='git-1.html'>git</a></span>
           				   
                     
 
@@ -172,7 +214,7 @@
 			<div class="article">
                 <a class="clearlink" href="16429243514096.html">
                 
-                  <h1>【新建仓库 Github】</h1>
+                  <h1>新建仓库 Github</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
@@ -233,6 +275,78 @@ git remote set-head origin -a
                   <div class="more-left left">
                   
                     <span class="date">01/23/2022 15:52 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='github.html'>github</a></span>
+          				   
+                    
+
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="16429245544950.html">
+                
+                  <h1>Github pages</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h1><a id="1%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.功能</h1>
+<blockquote>
+<p>提供静态网页访问功能</p>
+</blockquote>
+<p>1.特点</p>
+<ul>
+<li>服务器：使用 github 本身，免费</li>
+<li>域名：通过仓库名生成可访问 github 二级域名</li>
+</ul>
+<h1><a id="2%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.操作步骤</h1>
+<p>1.新建 github 仓库</p>
+<blockquote>
+<p>参考：新建仓库 Github<br />
+注：一定是 public</p>
+</blockquote>
+<p>2.开启 github page</p>
+<ul>
+<li>1.进入对应仓库</li>
+<li>2.<code>Settings</code>：进入仓库设置，往下滚动 <code>GitHub Pages</code>，点击 <code>Check it out here</code></li>
+<li>3.<code>Pages</code>：进入 github pages 设置</li>
+<li>4.<code>Choose a theme</code>：选择网站的主题</li>
+<li>5.<code>Commit changes</code>：提交主题</li>
+</ul>
+<p>3.分支</p>
+<ul>
+<li><code>默认分支</code>：github pages，默认分支：gh-pages</li>
+<li><code>修改为master</code>：<code>Pages</code> -&gt; <code>Source</code> -&gt; <code>Branch</code> -&gt; <code>master</code></li>
+</ul>
+<p>4.查看域名</p>
+<ul>
+<li>1.<code>Settings</code>：进入仓库设置</li>
+<li>2.<code>Pages</code>：进入 github pages 设置</li>
+<li>3.<code>Your site is ready to be published at xxx</code>：即为可访问的域名</li>
+</ul>
+<p>5.web访问</p>
+<ul>
+<li>1.浏览器访问第三步获取的域名，查看效果</li>
+</ul>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">01/23/2022 15:55 下午</span>
                     <span>posted in&nbsp;</span> 
           				  
           					    <span class="posted-in"><a href='github.html'>github</a></span>
@@ -445,114 +559,6 @@ git config --local -l
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="16414564877160.html">
-                
-                  <h1>【ssh连接服务器】</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<h3><a id="1%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.连接服务器</h3>
-<p>1.用户名连接</p>
-<pre><code class="language-plain_text">
-</code></pre>
-<p>2.私钥连接</p>
-<blockquote>
-<p>公钥已经被添加在服务器</p>
-</blockquote>
-<pre><code class="language-plain_text"># 1.自动识别私钥
-ssh ec2-user@18.181.70.198
-
-# 2.需要携带私钥
-# -i：携带私钥，~/.ssh/eb-rtc-api-sandbox.pem 为私钥文件
-ssh -i ~/.ssh/eb-rtc-api-sandbox.pem ec2-user@13.112.233.99
-
-# 错误1：文件 ~/.ssh/eb-rtc-api-sandbox.pem 没有权限
-# chmod 777 ~/.ssh/eb-rtc-api-sandbox.pem
-# 报错2：私钥设置 777 权限后，仍然报错
-# ssh Permissions 0777 for ‘***’ are too open
-# 解决方案：将文件全选改成 600 就行了
-# 不知道 ssh 读取私钥 777 反而没有权限
-</code></pre>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">01/06/2022 16:08 下午</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='git-1.html'>git</a></span>
-          				   
-                    
-
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="16153950580325.html">
-                
-                  <h1>【1.常用命令】</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<h3><a id="1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.配置文件</h3>
-<blockquote>
-<p>配置文件地址 ~/.gitconfig</p>
-</blockquote>
-<pre><code class="language-plain_text"># 1.查看所有配置
-# git config [–local|–global|–system] -l
-# -l:-list简写
-git config --global -l
-
-# 2.编辑配置
-# git config [–local|–global|–system] -e
-git config –global -e
-
-# 3.删除配置
-# 方法1：直接编辑文件：~/.gitconfig
-# 方法2：--unset
-git config --global --unset user.name
-</code></pre>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">03/11/2021 00:50 上午</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='git-1.html'>git</a></span>
-          				   
-                    
-
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -577,7 +583,8 @@ git config --global --unset user.name
           <div id="site-info" class="site-info">
             
                 <h1>石强博客</h1>
-                <div class="site-des"></div>
+                <div class="site-des">勤学如春起之苗，不见其增，日有所长<br>
+辍学如磨刀之秋，不见其损，日有所亏</div>
                 <div class="social">
 
 
@@ -622,31 +629,31 @@ git config --global --unset user.name
 	      
 		      
 			      <li class="post">
-			        <a href="16429245544950.html">【Github pages】</a>
+			        <a href="16153950580325.html">【1.常用命令】</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="16429243514096.html">【新建仓库 Github】</a>
+			        <a href="16414564877160.html">ssh连接服务器</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="16429243514096.html">新建仓库 Github</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="16429245544950.html">Github pages</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
 			        <a href="16429309722289.html">【2.Git 多用户配置】</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="16414564877160.html">【ssh连接服务器】</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="16153950580325.html">【1.常用命令】</a>
 			      </li>
 		     
 		   
@@ -898,7 +905,7 @@ pre[class*="language-"].line-numbers > code {
      
     </script>
 
-
+<img src='https://uploadbeta.com/api/pictures/random/' style='max-width:50%'>
 
   </body>
 </html>
